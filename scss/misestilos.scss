@@ -24,14 +24,9 @@ $theme-colors: map-merge(
 
 //variables tipo
 $titulos: "Barlow", sans-serif;
-$tipotxt:"Space Grotesk", sans-serif;
+$tipotxt: "Space Grotesk", sans-serif;
 
 // TIPOGRAFÍAS
-body{
-    font-family: $tipotxt;
-    font-size: 1.2em;
-    line-height: 1.5;
-}
 
 .encabezado-h1{
     font-family: $titulos;
@@ -41,15 +36,67 @@ body{
     line-height: normal;
 }
 
-// NAV BAR
-.right-align {
-    display: flex;
-    justify-content: flex-end; /* Alinea el contenido al final (derecha) */
+.titulo-h1{
+    font-family: $titulos;
+    color: #000;
+    font-size: 4em;
+    font-weight: 900;
+    line-height: normal;
 }
+
+.titulo-h2{
+    font-family: $titulos;
+    color: #000;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: normal;
+}
+.subtitulo{
+    font-family: $titulos;
+    color: #000;
+    font-size: 3em;
+    font-weight: 400;
+
+}
+.titulo-bajo{
+    font-family: $titulos;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.texto{
+    font-family: $tipotxt;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.text-slider{
+    font-family: $tipotxt;
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+.texto-gr{
+    font-family: $tipotxt;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+// NAV BAR
+  .custom-navbar {
+    background-color: #000 !important; /* Fondo negro puro */
+    transition: background-color 0.4s ease;
+    
+  }
+  
 // CONTAINERS
 .micontainer{
   width: 90%;
   margin: auto;
+}
+
+.w-5{
+  width: 50%;
 }
 
 // BOTONES
@@ -63,15 +110,99 @@ body{
 
 }
 
+.btn-sub{
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  border: 1px solid black;
+  font-size: 15px;
+  transition: 0.3s;
+  background-color: white;
+  cursor: pointer;
+  &:hover{
+                background-color: $micolor;
+                color:black;
+                
+            }
+}
 
+.btn-flecha {
+      background-color: transparent;
+      color: #000;
+      font-size: 4rem;
+      padding: 0;
+      border: none;
+      transition: transform 0.6s ease;
+      
+      &:hover {
+        transform: rotate(-90deg) scale(1.1); // un poco más grande en hover (opcional)
+        color: $micolor; // Cambia el color al pasar el mouse
+      }
+}
+
+// CLASE PARA LAS LINEAS 
+ .text-slider {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+// FOOTER
+.footer-h1{
+    font-family: $titulos;
+    font-size: 4em;
+}
+
+.enlaces{
+    font-family: $titulos;
+    font-size: 3em;
+    color:white;
+}
+
+.caja-footer{
+padding-left: 50px;
+padding-right: 50px;
+}
+
+// MEDIA QUERIES
+@media screen and (max-width: 800px) {
+    .encabezado-h1 {
+        font-size: 6em;
+    }
+    .titulo-h1 {
+        font-size: 3em;
+    }
+  
+}
 @media (max-width: 600px) {
     .encabezado-h1 {
         font-size: 4em;
     }
+    .titulo-h1 {
+        font-size: 3em;
+    }
+    .titulo-bajo {
+        font-size: 2em;
+    }
+    .titulo-h2 {
+        font-size: 1em;
+    }
+    .text-slider{
+    font-size: 1em;
+   }
+   .texto-gr{
+     font-size: 2em;
+   }
+   .texto{
+     font-size: 1em;
+   }
 
-    .w-50 {
+    .micontainer{
+       width: 80%;
+    }
+
+    .w-5 {
     width: 90% !important;
-}
+    }
 
     .btn-mio {
         width: 100%;
