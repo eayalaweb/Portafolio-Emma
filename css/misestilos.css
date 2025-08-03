@@ -53,11 +53,19 @@
   font-family: "Space Grotesk", sans-serif;
   font-size: 4em;
   font-weight: 900;
+  color: #000;
 }
 
 .custom-navbar {
-  background-color: #000 !important; /* Fondo negro puro */
+  padding-top: 50px;
+  background-color: #000000 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 1080px;
   transition: background-color 0.4s ease;
+  font-size: 6em;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
 }
 
 .micontainer {
@@ -138,6 +146,10 @@
   }
 }
 @media (max-width: 600px) {
+  .custom-navbar {
+    padding-top: 20px;
+    font-size: 2em;
+  }
   .encabezado-h1 {
     font-size: 4em;
   }
