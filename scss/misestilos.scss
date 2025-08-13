@@ -38,7 +38,7 @@ $tipotxt: "Space Grotesk", sans-serif;
     color: $negro;
     font-size: 12em;
     font-weight: 900;
-    line-height: normal;
+    line-height: 10rem;
 }
 
 .titulo-h1{
@@ -111,7 +111,36 @@ $tipotxt: "Space Grotesk", sans-serif;
   width: 50%;
 }
 
+.w-7{
+  width: 70%;
+}
+
+.ml5{
+  margin-left: 5rem;
+}
+
+.pt10{
+  padding-top: 10rem;
+}
+// IMG
+
+.caja{
+  overflow: hidden;
+}
+  .caja:hover img {
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
 // BOTONES
+a{
+  color: black ; 
+  cursor: pointer;
+    &:hover{
+                  color:$micolor !important;
+                  
+              }
+}
 .btn-mio {
     border-radius: 5rem;
     background: $micolor;
@@ -121,6 +150,22 @@ $tipotxt: "Space Grotesk", sans-serif;
     font-size: 2em;
 
 }
+
+.btn-proyectos {
+    border-radius: 5rem;
+    background: white;
+    border: solid 1px black;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    font-size: 3em;
+    cursor: pointer;
+    &:hover{
+                  background-color: $micolor;
+                  color:black;
+                  
+              }
+}
+
 
 .btn-sub{
   width: fit-content;
@@ -186,6 +231,9 @@ padding-right: 50px;
     .titulo-h2 {
         font-size: 2em;
     }
+    .texto{
+     font-size: 1em;
+   }
   
 }
 @media (max-width: 600px) {
@@ -216,7 +264,9 @@ padding-right: 50px;
    .texto{
      font-size: 1em;
    }
-
+  .pt10{
+  padding-top: 1rem;
+}
     .micontainer{
        width: 80%;
     }
@@ -224,11 +274,20 @@ padding-right: 50px;
     .w-5 {
     width: 90% !important;
     }
+    .w-7 {
+    width: 90% !important;
+    }
 
     .btn-mio {
         width: 100%;
         padding: 10px;
         font-size: 1.5em;
+    }
+
+    .btn-proyectos {
+        
+        padding: 10px;
+        font-size: 1em;
     }
     .btn-flecha{
        font-size: 2rem;
