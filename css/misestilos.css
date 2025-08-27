@@ -45,7 +45,7 @@
 
 .text-slider {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 2em;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -182,7 +182,7 @@ a:hover {
   padding-right: 50px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .encabezado-h1 {
     font-size: 6em;
   }
@@ -194,6 +194,9 @@ a:hover {
   }
   .texto {
     font-size: 1em;
+  }
+  .text-slider {
+    font-size: 1rem;
   }
 }
 @media (max-width: 600px) {
@@ -213,20 +216,17 @@ a:hover {
   .titulo-h2 {
     font-size: 2em;
   }
-  .text-slider {
-    font-size: 1em;
+  .subtitulo {
+    font-size: 2em;
   }
   .texto-gr {
-    font-size: 2em;
+    font-size: 25px;
   }
   .texto {
     font-size: 1em;
   }
   .pt10 {
     padding-top: 1rem;
-  }
-  .micontainer {
-    width: 80%;
   }
   .w-5 {
     width: 90% !important;
@@ -235,9 +235,9 @@ a:hover {
     width: 90% !important;
   }
   .btn-mio {
-    width: 100%;
+    width: 80%;
     padding: 10px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
   .btn-proyectos {
     padding: 10px;
@@ -245,6 +245,12 @@ a:hover {
   }
   .btn-flecha {
     font-size: 2rem;
+  }
+  .footer-h1 {
+    font-size: 3em;
+  }
+  .enlaces {
+    font-size: 2em;
   }
 }
 /*!
